@@ -105,7 +105,7 @@ const storeBookmark = (e) => {
   e.preventDefault();
   const nameValue = websiteNameElement.value;
   let urlValue = websiteUrlElement.value;
-  if (!urlValue.includes('http://', 'https://')) {
+  if (!urlValue.includes('http://') && !urlValue.includes('https://')) {
     urlValue = `https://${urlValue}`;
   }
 
